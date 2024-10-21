@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isroq toto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .slot-machine {
+            display: inline-block;
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .slots {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .slot {
+            font-size: 50px;
+            width: 60px;
+            height: 60px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>ISROQ TOTO</h1>
+
+    <div class="slot-machine">
+        <div class="slots">
+            <div id="slot1" class="slot">🍎</div>
+            <div id="slot2" class="slot">🍒</div>
+            <div id="slot3" class="slot">🍇</div>
+        </div>
+        <button onclick="spinSlots()">Spin!</button>
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
